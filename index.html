@@ -1,0 +1,126 @@
+<!--Esta es la primera linea que debe escribirse para declararle al navegador la version de html que se va a utilizar con el archivo a trabajar.-->
+<!DOCTYPE html>
+<!--Con el elemento (html) le decimos al navegador el tipo de arquitectura de la pagina web y con el atributo (lang) establecemos el idioma en que se mostrara la pagina web.-->
+<html lang="es">
+  <!--Este elemento (head) se encarga del encabezado de una pagina web y dentro del mismo se agrega el titulo de la pagina web-->
+  <head>
+    
+    <!--Dento de head con este elemento (title) personalizamos el nombre de la pagina web (nombre que sale en la pestaña del navegador)-->
+    <title>AppDeGatos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Gemunu+Libre:wght@200&family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+   
+  </head>
+  <body>
+      <h2>AppDeGatos</h2>
+      <main>
+        <h3>Imágenes de Gatos</h3>
+        <!-- TODO: Agregar enlace a imagenes de gatos -->
+        <p>Haz click aquí para ver más <a href="https://www.freecodecamp.org/espanol/" target="_blank" rel="noopener noreferrer">imágenes de gatos.</a></p>
+        
+        <!-- Nota: debajo son enlaces a los parrafos mas abajo de la linea 59 a 71-->
+        <a href="#parrafo-1">Parrafo 1</a> 
+        <a href="#parrafo-2">Parrafo 2</a>
+        <a href="#parrafo-3">Parrafo 3</a>
+        <a href="#parrafo-4">Parrafo 4</a>
+
+        <!-- Nota: esta parte muestra la imagen del gato desde internet-->
+        <img class="borde-redondo" src="https://bit.ly/fcc-relaxing-cat" alt="Un lindo gato naranja recostado sobre su espalda.">  
+
+        <!-- nota: aqui le agrego un enlace a la imagen del gato en internet -->
+        <a href="https://www.freecodecamp.org/espanol/" target="_blank" rel="noopener noreferrer"><img src="https://bit.ly/fcc-relaxing-cat" alt="Un lindo gato naranja recostado sobre su espalda."></a>
+
+        <!-- Nota: esta parte se usa para separar con una linea horizontal-->
+        <hr>
+
+        <!-- Nota: esta parte muestra la como crear una lista no ordenada-->
+        <h3>Listas de Gatos</h3>
+
+        <div>
+          <p>Cosas que los gatos <em>aman</em>:</p>
+
+          <ul>
+            <li>Menta gatuna</li>
+            <li>Apuntadores Laser</li>
+            <li><s>Lasaña</s></li>
+          </ul>
+          
+          <img src="Imagenes/lasana.jpg" alt="Lasaña">
+
+          <!-- Nota: esta parte muestra como hacer una lista ordena-->
+          <p>Cosas que los gatos <strong>odian</strong>:</p>
+          <ol>
+            <li>Tratamientos antipulgas</li>
+            <li>Truenos</li>
+            <li>Otros gatos</li>
+          </ol>
+       </div>
+
+        <img src="Imagenes/gatos.jpg" alt="Varios gatos">
+
+
+        <!-- nota: los enlaces de arriba en linea 11 a 14 apuntan a estos parrafos y cada uno esta identificado con un id -->
+        <h3 id="parrafo-1">Parrafo 1</h3>
+        <h3 id="parrafo-1">Parrafo 1</h3>
+
+        <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+
+        <h3 id="parrafo-2">Parrafo 2</h3>
+
+        <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+
+        <h3 id="parrafo-3">Parrafo 3</h3>
+
+        <p class="lista-de-gatos">Meowwww loved it, hated it, loved it, hated it yet spill litter box, scratch at owner, destroy all furniture, especially couch or lay on arms while you're using the keyboard. Missing until dinner time toy mouse squeak roll over. With tail in the air lounge in doorway. Man running from cops stops to pet cats, goes to jail.</p>
+
+        <h3 id="parrafo-4">Parrafo 4</h3>
+
+        <p>Intently stare at the same spot poop in the plant pot but kitten is playing with dead mouse. Get video posted to internet for chasing red dot leave fur on owners clothes meow to be let out and mesmerizing birds leave fur on owners clothes or favor packaging over toy so purr for no reason. Meow to be let out play time intently sniff hand run outside as soon as door open yet destroy couch.</p>
+
+        <!-- nota: con el elemento o etiqueta form creamos los formularios y con el atributo action="/" se agrega la ruta donde se guardara la informacion que se agregue en el formulario, esta ruta puede ser de un servidor o un archivo a crearse, mas adelante sabre como hacerlo. -->
+        <form action="/enviar-respuesta">
+
+          <!-- nota: Estos son los botones de radio (⃝) con salto de linea (br) adicional es bueno recordar que br no necesita etiqueta de cierre. -->
+          <label for="interior">
+            <input id="interior" type="radio" value="interior" name="interior-exterior" checked>Interior
+          </label>
+          <br>
+
+          <label for="exterior">
+            <input id="exterior" type="radio" value="exterior" name="interior-exterior">Exterior
+          </label>
+          <br>
+        
+          <!-- nota: Casillas de verificación (checkbox □) -->
+          <label for="carinoso">
+            <input id="carinoso" type="checkbox" value="carinoso" name="personalidad" checked>Cariñoso
+          </label>
+          <br>
+
+          <label for="perezoso">
+            <input id="perezoso" type="checkbox" value="perezoso" name="personalidad">Perezoso
+          </label>
+          <br>
+
+          <label for="energico">
+            <input id="energico" type="checkbox" value="energico" name="personalidad">Energico
+          </label>
+          <br>
+
+          <!-- nota: Aqui esta el texto y boton Enviar. Usando el atributo placeholder se puede agregar una descripcion al recuadro donde se agregara la informacion y se le agregamos el atributo required no se podra enviar vacio. -->
+          <input type="text" placeholder="URL de la foto de tu gato" required>
+          <button type="submit">Enviar</button>
+        </form>
+
+
+      </main>
+      <!-- Esto es el pie de pagina donde se agrega la informacion de contacto, derechos de autor, enlaces y cualquier otra informacion que corresponda al pie de pagina. -->
+      <footer>
+        <p><small>Sin derechos de autor - <a href="https://google.com.do" target="_blank">Google Rep. Dom.</a></small></p>
+
+
+      </footer>  
+  </body>
+</html>
